@@ -1,4 +1,4 @@
-package com.ecomz.orders;
+package com.ecomz.orders.model;
 
 public class OrdersModule {
 public OrdersModule() {
