@@ -79,20 +79,20 @@ public class Cart_Crud_Bean {
 	}
 
 	public void addCartItem(String productId, String productDescription, String unitCost, String quantity) {
-		double dblTotalCost = 0.0;
-		double dblUnitCost = 0.0;
-		int iQuantity = 0;
+		double TotalCost = 0.0;
+		double UnitCost = 0.0;
+		int Quantity = 0;
 		Cart_item_Bean Cartitem = new Cart_item_Bean();
 		try {
-			dblUnitCost = Double.parseDouble(unitCost);
-			iQuantity = Integer.parseInt(quantity);
-			if (iQuantity > 0) {
-				dblTotalCost = dblUnitCost * iQuantity;
+			UnitCost = Double.parseDouble(unitCost);
+			Quantity = Integer.parseInt(quantity);
+			if (Quantity > 0) {
+				TotalCost = UnitCost * Quantity;
 				Cartitem.setProductId(productId);
 				Cartitem.setProductDescription(productDescription);
-				Cartitem.setUnitCost(dblUnitCost);
-				Cartitem.setQuantity(iQuantity);
-				Cartitem.setTotalCost(dblTotalCost);
+				Cartitem.setUnitCost(UnitCost);
+				Cartitem.setQuantity(Quantity);
+				Cartitem.setTotalCost(TotalCost);
 				cartItems.add(Cartitem);
 				CalcualteOrderTotal();
 			}
