@@ -1,0 +1,7 @@
+Link for Cart using JSP:
+
+http://www.tech-freaks.com/jsp-servlets/shopping-cart/all-pages.html
+
+Link for Cart using static HTML5:
+
+https://designmodo.com/shopping-cart-ui/
