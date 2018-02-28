@@ -9,4 +9,15 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <servlet-name>CartController</servlet-name>
+    <servlet-class>com.ecomz.orders.controller.CartController</servlet-class>
+  </servlet>
+ 
+  <!-- Define the Manager Servlet Mapping -->
+  <servlet-mapping>
+    <servlet-name>CartController</servlet-name>
+      <url-pattern>/servlet/*</url-pattern>
+  </servlet-mapping>
+ 
 </web-app>
